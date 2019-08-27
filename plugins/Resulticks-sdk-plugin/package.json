@@ -1,0 +1,52 @@
+{
+  "_from": "resulticksplugin@1.0.15",
+  "_id": "resulticksplugin@1.0.15",
+  "_inBundle": false,
+  "_integrity": "sha512-F8FnX70ho3I3RzHCKZamowmywfXLyWG7LIuVgSz5Quvt+GdqFv5ekJlY4+gYarhDSDO1bWNFAv2OX0fQWEhvug==",
+  "_location": "/resulticksplugin",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "resulticksplugin@1.0.15",
+    "name": "resulticksplugin",
+    "escapedName": "resulticksplugin",
+    "rawSpec": "1.0.15",
+    "saveSpec": null,
+    "fetchSpec": "1.0.15"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/resulticksplugin/-/resulticksplugin-1.0.15.tgz",
+  "_shasum": "5e76997e3bbb1f67fa3c82508d0c51e633ce711b",
+  "_spec": "resulticksplugin@1.0.15",
+  "_where": "/Users/Buvaneswaran/Documents/CordavaPlugins/CordavaProjects/Sample/hello",
+  "author": {
+    "name": "Resulticks"
+  },
+  "bugs": {
+    "url": "https://github.com/resulticks/ResulticksSDKPlugin/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Resulticks Experience Next Generation",
+  "homepage": "https://github.com/resulticks/ResulticksSDKPlugin#readme",
+  "keywords": [
+    "Resulticks",
+    "ResultickPlugin",
+    "ResuticksCordavaPulgin"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "resulticksplugin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/resulticks/ResulticksSDKPlugin.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.15"
+}
