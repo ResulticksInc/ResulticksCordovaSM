@@ -38,13 +38,10 @@ FCMPlugin.prototype.onTokenRefreshReceived = function(token){
 	console.log(token)
 }
 // FIRE READY //
-exec(function(result){ console.log("FCMPlugin Ready OK") }, function(result){ console.log("FCMPlugin Ready ERROR") }, "FCMPlugin",'ready',[]);
-
-
-
-
+exec(function(result){console.log("FCMPlugin Ready OK") }, function(result){ console.log("FCMPlugin Ready ERROR") },"FCMPlugin",'ready',[]);
 
 var fcmPlugin = new FCMPlugin();
+
 module.exports = fcmPlugin;
 
 });

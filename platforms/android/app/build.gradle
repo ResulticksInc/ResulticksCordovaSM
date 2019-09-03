@@ -277,7 +277,9 @@ dependencies {
     implementation(project(path: ":CordovaLib"))
     implementation "com.google.firebase:firebase-core:16.0.8"
     implementation "com.google.firebase:firebase-messaging:17.5.0"
-    implementation "io.resu:ReAndroidSDK_54b865b8_5123_461a_accf_d12ed01ce383:-SNAPSHOT"
+    //implementation "io.resu:ReAndroidSDK_54b865b8_5123_461a_accf_d12ed01ce383:-SNAPSHOT"
+    implementation "io.resu:ReAndroidSDK_48469b6c_7024_41a4_97b3_702b052eb6e4:9e7711cdbe"
+   // implementation 'io.resu:ReAndroidSDK_54b865b8_5123_461a_accf_d12ed01ce383:-SNAPSHOT'
     // SUB-PROJECT DEPENDENCIES END
 }
 

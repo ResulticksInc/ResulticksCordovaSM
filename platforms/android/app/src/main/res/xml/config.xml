@@ -27,5 +27,6 @@
     <preference name="loglevel" value="DEBUG" />
     <feature name="ResulticksPlugin">
         <param name="android-package" value="resu.io.ResulticksPlugin" />
+        <param name="onload" value="true" />
     </feature>
 </widget>

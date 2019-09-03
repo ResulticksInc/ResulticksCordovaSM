@@ -39,9 +39,6 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         Log.d(TAG, "==> MyFirebaseMessagingService onMessageReceived");
 
 
-        if(ReAndroidSDK.getInstance(this).onReceivedCampaign(remoteMessage.getData()))
-            return;
-
         if (remoteMessage.getNotification() != null) {
             Log.d(TAG, "\tNotification Title: " + remoteMessage.getNotification().getTitle());
             Log.d(TAG, "\tNotification Message: " + remoteMessage.getNotification().getBody());
@@ -57,6 +54,10 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
         Log.d(TAG, "\tNotification Data: " + data.toString());
         FCMPlugin.sendPushPayload(data);
+
+        if (ReAndroidSDK.getInstance(this).onReceivedCampaign(remoteMessage.getData()))
+            return;
+
         //sendNotification(remoteMessage.getNotification().getTitle(), remoteMessage.getNotification().getBody(), remoteMessage.getData());
     }
     // [END receive_message]

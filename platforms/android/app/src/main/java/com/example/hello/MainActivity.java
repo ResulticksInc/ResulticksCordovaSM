@@ -22,6 +22,10 @@ package com.example.hello;
 import android.os.Bundle;
 import org.apache.cordova.*;
 
+import java.lang.reflect.Method;
+
+import io.mob.resu.reandroidsdk.error.Log;
+
 public class MainActivity extends CordovaActivity
 {
     @Override
@@ -37,5 +41,23 @@ public class MainActivity extends CordovaActivity
 
         // Set by <content src="index.html" /> in config.xml
         loadUrl(launchUrl);
+
+        try {
+
+            Class aClass = Class.forName("com.example.hello.Sample");
+            Method method = method = aClass.getMethod("getInstance");
+            Object dog = method.invoke(method);
+            Log.e("tokken", "" + dog.getClass().getSimpleName());
+            Method method1 = dog.getClass().getMethod("getValString");
+            Log.e("tokken", "" + method1.invoke(dog));
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+     MyReceiver myReceiver = new MyReceiver();
+
+
+
     }
 }

@@ -126,6 +126,7 @@ public class FCMPlugin extends CordovaPlugin {
 		Log.d(TAG, "\tnotificationCallBackReady: " + notificationCallBackReady);
 		Log.d(TAG, "\tgWebView: " + gWebView);
 	    try {
+
 		    JSONObject jo = new JSONObject();
 			for (String key : payload.keySet()) {
 			    jo.put(key, payload.get(key));

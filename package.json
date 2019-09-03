@@ -15,7 +15,7 @@
   "dependencies": {
     "cordova-android": "^8.0.0",
     "cordova-plugin-fcm": "^2.1.2",
-    "resulticksplugin": "^1.0.15"
+    "resulticksplugin": "^1.0.19"
   },
   "devDependencies": {
     "cordova-plugin-whitelist": "^1.3.4"

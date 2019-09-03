@@ -1,28 +1,28 @@
 {
-  "_from": "resulticksplugin@1.0.15",
-  "_id": "resulticksplugin@1.0.15",
+  "_from": "resulticksplugin@1.0.19",
+  "_id": "resulticksplugin@1.0.19",
   "_inBundle": false,
-  "_integrity": "sha512-F8FnX70ho3I3RzHCKZamowmywfXLyWG7LIuVgSz5Quvt+GdqFv5ekJlY4+gYarhDSDO1bWNFAv2OX0fQWEhvug==",
+  "_integrity": "sha512-H79mrzxkA5D/iRxWHzEfTj+wtfinZXR+ufwjxTDUE9nnGXkTXwphK/mR73s/0g39DE7q1UyDXeLvag8oAzzd+A==",
   "_location": "/resulticksplugin",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "resulticksplugin@1.0.15",
+    "raw": "resulticksplugin@1.0.19",
     "name": "resulticksplugin",
     "escapedName": "resulticksplugin",
-    "rawSpec": "1.0.15",
+    "rawSpec": "1.0.19",
     "saveSpec": null,
-    "fetchSpec": "1.0.15"
+    "fetchSpec": "1.0.19"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/resulticksplugin/-/resulticksplugin-1.0.15.tgz",
-  "_shasum": "5e76997e3bbb1f67fa3c82508d0c51e633ce711b",
-  "_spec": "resulticksplugin@1.0.15",
-  "_where": "/Users/Buvaneswaran/Documents/CordavaPlugins/CordavaProjects/Sample/hello",
+  "_resolved": "https://registry.npmjs.org/resulticksplugin/-/resulticksplugin-1.0.19.tgz",
+  "_shasum": "37da81c3be910ec1066afa64dea8dfc6532766d4",
+  "_spec": "resulticksplugin@1.0.19",
+  "_where": "/Users/Buvaneswaran/Documents/GitHub/Cordava/CordovaSample/ResulticksCordovaSM",
   "author": {
     "name": "Resulticks"
   },
@@ -48,5 +48,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "1.0.15"
+  "version": "1.0.19"
 }

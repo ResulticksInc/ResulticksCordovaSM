@@ -20,6 +20,6 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
   module.exports.metadata = {
     "cordova-plugin-whitelist": "1.3.4",
     "cordova-plugin-fcm": "2.1.2",
-    "Resulticks-sdk-plugin": "0.1.14"
+    "Resulticks-sdk-plugin": "0.1.19"
   };
 });

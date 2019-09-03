@@ -9,14 +9,14 @@ module.exports.customEvent = function(arg0, success, error) {
 	exec(success, error, 'ResulticksPlugin', 'customEvent', [ arg0 ]);
 };
 
-module.exports.screenStart = function(arg0, success, error) {
+module.exports.userOnResume = function(arg0, success, error) {
 	exec(success, error, 'ResulticksPlugin', 'screenStart', [ arg0 ]);
 };
 
-module.exports.screenEnd = function(arg0, success, error) {
+module.exports.onUserNavigation = function(arg0, success, error) {
 	exec(success, error, 'ResulticksPlugin', 'screenEnd', [ arg0 ]);
 };
-module.exports.customFieldCapture = function(arg0, success, error) {
+module.exports.onUserPause = function(arg0, success, error) {
 	exec(success, error, 'ResulticksPlugin', 'customFieldCapture', [ arg0 ]);
 };
 

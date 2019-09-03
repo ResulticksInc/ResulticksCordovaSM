@@ -37,76 +37,80 @@ public class ResulticksPlugin extends CordovaPlugin {
 
     private void register(JSONArray message, final CallbackContext callbackContext) {
 
-        if (message != null && message.length() > 0) {
-            try {
-                JSONObject jsonObject = message.getJSONObject(0);
-                MRegisterUser registerUser = new MRegisterUser();
-                registerUser.setUserUniqueId(jsonObject.optString("uniqueId"));
-                registerUser.setName(jsonObject.optString("name"));
-                registerUser.setEmail(jsonObject.optString("email"));
-                registerUser.setPhone(jsonObject.optString("phone"));
-                registerUser.setAge(jsonObject.optString("age"));
-                registerUser.setGender(jsonObject.optString("gender"));
-                registerUser.setDeviceToken(jsonObject.optString("token"));
-                registerUser.setProfileUrl(jsonObject.optString("profileUrl"));
-                ReAndroidSDK.getInstance(this.cordova.getActivity()).onDeviceUserRegister(registerUser);
-            } catch (Exception e) {
-                //callbackContext.success("Welcome Buvanesh");
-                Log.e("User reg Exception: ",String.valueOf(e.getMessage()));
-            }
+        cordova.getThreadPool().execute(new Runnable() {
+            public void run() {
+                if (message != null && message.length() > 0) {
+                    try {
+                        JSONObject jsonObject = message.getJSONObject(0);
+                        MRegisterUser registerUser = new MRegisterUser();
+                        registerUser.setUserUniqueId(jsonObject.optString("uniqueId"));
+                        registerUser.setName(jsonObject.optString("name"));
+                        registerUser.setEmail(jsonObject.optString("email"));
+                        registerUser.setPhone(jsonObject.optString("phone"));
+                        registerUser.setAge(jsonObject.optString("age"));
+                        registerUser.setGender(jsonObject.optString("gender"));
+                        registerUser.setDeviceToken(jsonObject.optString("token"));
+                        registerUser.setProfileUrl(jsonObject.optString("profileUrl"));
+                        ReAndroidSDK.getInstance(cordova.getActivity()).onDeviceUserRegister(registerUser);
+                    } catch (Exception e) {
+                        Log.e("User reg Exception: ",String.valueOf(e.getMessage()));
+                    }
 
-        } else {
-            callbackContext.error("Expected one non-empty string argument.");
-        }
+                } else {
+                    callbackContext.error("Expected one non-empty string argument.");
+                }
+            }
+        });
+
     }
     
      private void customEvent(JSONArray message, CallbackContext callbackContext) {
 
-        if (message != null && message.length() > 0) {
-            try {
-                JSONObject jsonObject = message.getJSONObject(0);
-                String eventName = jsonObject.optString("eventName");
-                JSONObject eventData = jsonObject.optJSONObject("data");
-                if (TextUtils.isEmpty(eventName)) {
-                    Toast.makeText(cordova.getActivity(), "Event name can't be empty!", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                if (TextUtils.isEmpty(eventData.toString()))
-                    ReAndroidSDK.getInstance(this.cordova.getActivity()).onTrackEvent(eventName);
-                else
-                    ReAndroidSDK.getInstance(this.cordova.getActivity()).onTrackEvent(eventData,eventName);
+         cordova.getThreadPool().execute(new Runnable() {
+             public void run() {
+                 if(message !=null&&message.length()>0)
 
-            } catch (Exception e) {
-                Log.e("User events Exception: ",String.valueOf(e.getMessage()));
-            }
-        } else {
-            callbackContext.error("Expected one non-empty string argument.");
-        }
+                 {
+                     try {
+                         JSONObject jsonObject = message.getJSONObject(0);
+                         String eventName = jsonObject.optString("eventName");
+                         JSONObject eventData = jsonObject.optJSONObject("data");
+
+                         if (TextUtils.isEmpty(eventName)) {
+                             Toast.makeText(cordova.getActivity(), "Event name can't be empty!", Toast.LENGTH_SHORT).show();
+                             return;
+                         }
+                         if (TextUtils.isEmpty(eventData.toString()))
+                             ReAndroidSDK.getInstance(cordova.getActivity()).onTrackEvent(eventName);
+                         else
+                             ReAndroidSDK.getInstance(cordova.getActivity()).onTrackEvent(eventData, eventName);
+
+                     } catch (Exception e) {
+                         Log.e("User events Exception: ", String.valueOf(e.getMessage()));
+                     }
+                 } else
+
+                 {
+                     callbackContext.error("Expected one non-empty string argument.");
+                 }
+
+             }
+         });
+
+
     }
 
 
     private void screenStart(JSONArray message, CallbackContext callbackContext) {
 
-        if (message != null && message.length() > 0) {
-        } else {
-            callbackContext.error("Expected one non-empty string argument.");
-        }
     }
 
     private void screenEnd(JSONArray message, CallbackContext callbackContext) {
-        if (message != null && message.length() > 0) {
-            //Toast.makeText(this.cordova.getActivity(), message, Toast.LENGTH_SHORT).show();
-        } else {
-            callbackContext.error("Expected one non-empty string argument.");
-        }
+       
     }
 
     private void customFieldCapture(JSONArray message, CallbackContext callbackContext) {
-        if (message != null && message.length() > 0) {
-            //Toast.makeText(this.cordova.getActivity(), message, Toast.LENGTH_SHORT).show();
-        } else {
-            callbackContext.error("Expected one non-empty string argument.");
-        }
+       
     }
 
 

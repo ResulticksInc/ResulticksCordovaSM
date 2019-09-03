@@ -31,6 +31,7 @@ import android.webkit.WebChromeClient.CustomViewCallback;
  * are not expected to implement it.
  */
 public interface CordovaWebView {
+
     public static final String CORDOVA_VERSION = "8.0.0";
 
     void init(CordovaInterface cordova, List<PluginEntry> pluginEntries, CordovaPreferences preferences);
@@ -138,5 +139,6 @@ public interface CordovaWebView {
     // TODO: Work on deleting these by removing refs from plugins.
     Context getContext();
     void loadUrl(String url);
+
     Object postMessage(String id, Object data);
 }

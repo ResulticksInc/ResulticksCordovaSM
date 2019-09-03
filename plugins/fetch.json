@@ -18,7 +18,7 @@
   "Resulticks-sdk-plugin": {
     "source": {
       "type": "registry",
-      "id": "resulticksplugin@^1.0.15"
+      "id": "resulticksplugin@1.0.19"
     },
     "is_top_level": true,
     "variables": {}
