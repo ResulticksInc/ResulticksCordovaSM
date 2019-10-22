@@ -19,6 +19,7 @@
 -->
 <html>
 <!--  -->
+
 <head>
     <!--
         Customize this policy to fit your own app's needs. For more guidance, see:
@@ -37,52 +38,40 @@
 </head>
 
 <body>
-<div class="app">
-    <h1>Apache Cordova</h1>
-    <div id="deviceready" class="blink">
-        <p class="event listening">Connecting to Device</p>
-        <p class="event received">Device is Ready</p>
+    <div class="app">
+        <h1>Apache Cordova</h1>
+        <div id="deviceready" class="blink">
+            <p class="event listening">Connecting to Device</p>
+            <p class="event received">Device is Ready</p>
 
-        <button onclick="customAlert()">AfterLoginsucess</button>
+            <button onclick="register()">AfterLoginsucess</button>
 
-      <button onclick="customEvent()">customEvent</button>
+            <button onclick="customEvent()">customEvent</button>
 
-        <button onclick="locationUpdate()">LocationUpdate</button>
+            <button onclick="locationUpdate()">LocationUpdate</button>
 
-        <button onclick="getReNotification()">Welcome</button>
+            <button onclick="getReNotification()">Get Notification</button>
 
 
+        </div>
     </div>
-</div>
-<script type="text/javascript" src="cordova.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
-<script>
-
-function customAlert()
-{
-//alert("welcome");
-ReCordovaPlugin.getNotification("getNotification",ReNotificationReceived);
-}
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script>
+        function customAlert() {
+            //alert("welcome");
+            ReCordovaPlugin.getNotification("getNotification", ReNotificationReceived);
+        }
 
 
-         function ReNotificationReceived(args) {
-          // Do something
-           // notificationVal = JSON.parse(args);
-            console.log(args);
-          };
-
-
-
-
-    function locationUpdate()
-    {
-       var location = {
-               latitude : 13.067439,
-               longitude: 80.237617
-           }
+        function locationUpdate() {
+            var location = {
+                latitude: 13.067439,
+                longitude: 80.237617
+            }
 
             ReCordovaPlugin.locationUpdate(location);
-    }
+        }
 
 
         function register() {
@@ -93,26 +82,26 @@ ReCordovaPlugin.getNotification("getNotification",ReNotificationReceived);
                 email: 'buvanesh@gmail.com',
                 phone: '9786483047',
                 gender: 'male',
-               token: 'ftBTbiSgYdU:APA91bFuoBDx0o8MlD-aKfJRvmQszZ0_NLNPHplVCF91fQYRIqp2SXWqteWDg_qa5YzQAcQ71NjNj_rfqXa7Woq2decTlN81sZXopLO5nkwgsNlQVChW866DoONt27bKtA2QQGCOxNKn',
+                token: 'ftBTbiSgYdU:APA91bFuoBDx0o8MlD-aKfJRvmQszZ0_NLNPHplVCF91fQYRIqp2SXWqteWDg_qa5YzQAcQ71NjNj_rfqXa7Woq2decTlN81sZXopLO5nkwgsNlQVChW866DoONt27bKtA2QQGCOxNKn',
                 profileUrl: ''
             }
             ReCordovaPlugin.userRegister(resUser);
         }
 
-       function customEvent() {
-           //alert('Hai2');-->
-           var resEvent1 = {
+        function customEvent() {
+            //alert('Hai2');-->
+            var resEvent1 = {
                 eventName: 'App Opened'
-           }
+            }
 
-           var resEvent2 = {
-               eventName: 'Product Purchased',
-               data: {
+            var resEvent2 = {
+                eventName: 'Product Purchased',
+                data: {
                     productId: 'P234234',
-                   productName: 'Mobile Phone'
+                    productName: 'Mobile Phone'
                 }
-           }
-           ReCordovaPlugin.customEvent(resEvent2);
+            }
+            ReCordovaPlugin.customEvent(resEvent2);
 
         }
 
@@ -120,54 +109,37 @@ ReCordovaPlugin.getNotification("getNotification",ReNotificationReceived);
             //alert('Hai2');-->
             var resEvent1 = {
                 eventName: 'App Opened'
-          }
+            }
 
             var resEvent2 = {
                 eventName: 'Product Purchased',
                 data: {
-                   productId: 'P234234',
-                   productName: 'Mobile Phone'
+                    productId: 'P234234',
+                    productName: 'Mobile Phone'
                 }
-          }
-          ReCordovaPlugin.customEvent(resEvent2);
+            }
+            ReCordovaPlugin.customEvent(resEvent2);
 
-       }
-
-
-
-    var notificationval;
-
-       function getReNotification()
-       {
-
-        alert("welcome");
-        ReCordovaPlugin.getNotification("getNotification",ReNotificationReceived);
-
-       }
-
-         function ReNotificationReceived(args) {
-          // Do something-->
-          notificationVal = JSON.parse(args);
-            console.log(args);
-          };
+        }
 
 
 
-        function deleteReNotification(position)
-       {
+        var notificationval;
 
-        ReCordovaPlugin.deleteNotification(notificationval[position])
+        function getReNotification() {
 
-       }
+            alert("welcome");
+            ReCordovaPlugin.getNotification("getNotification", ReNotificationReceived);
 
-
-
-
+        }
 
 
+        function deleteReNotification(position) {
 
+            ReCordovaPlugin.deleteNotification(notificationval[position])
 
-</script>
+        }
+    </script>
 
 </body>
 

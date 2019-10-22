@@ -64,6 +64,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         }
 
 
+
         if (ReAndroidSDK.getInstance(this).onReceivedCampaign(remoteMessage.getData()))
             return;
 
