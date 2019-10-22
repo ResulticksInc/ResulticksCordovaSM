@@ -28,7 +28,7 @@ var app = {
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
-            document.addEventListener("deviceready", onUserNavigation, false);
+           // document.addEventListener("deviceready", onUserNavigation, false);
     },
 
     // Update DOM on a Received Event
@@ -42,6 +42,7 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+        onUserNavigation();
     }
 
 };
@@ -51,21 +52,32 @@ app.initialize();
 
 function onUserNavigation()
 {
-console.log('onUserNavigation Called');
- var userJourney = {
-  screenName : window.location.href
- }
-  ResulticksPlugin.resNavigation(userJourney);
+
+ ReCordovaPlugin.onDeviceReady(onNativeCallBackListeners);
+
+//
+// console.log('onUserNavigation Called');
+// var userJourney = {
+//  screenName : window.location.href
+// }
+//  ReCordovaPlugin.screenNavigation(userJourney);
+
+
+
 }
 
 
 function onNativeCallBackListeners(data)
 {
+ alert(' Welcome ');
   var action = data.actionName;
 
   var action = data.data;
 
 }
+
+
+
 
 
 function getInnercontent() {
@@ -133,7 +145,3 @@ function getAtributes(subdiv, maintag, object) {
 	subdiv["href"] = object.prop("href");
     maintag.push(subdiv);
 }
-
-
-
-

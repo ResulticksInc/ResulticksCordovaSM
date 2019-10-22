@@ -10,10 +10,10 @@
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.example.hello"
     },
-    "cordova-plugin-fcm": {
+    "cordova-plugin-fcm-updated": {
       "PACKAGE_NAME": "com.example.hello"
     },
-    "Resulticks-sdk-plugin": {
+    "resulticks-cordova-plugin-inh": {
       "PACKAGE_NAME": "com.example.hello"
     }
   },

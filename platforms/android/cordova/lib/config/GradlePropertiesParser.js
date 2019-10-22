@@ -37,7 +37,7 @@ class GradlePropertiesParser {
             'org.gradle.jvmargs': '-Xmx2048m',
 
             // allow NDK to be used - required by Gradle 1.5 plugin
-           // 'android.useDeprecatedNdk': 'true'
+            'android.useDeprecatedNdk': 'true'
 
             // Shaves another 100ms, but produces a "try at own risk" warning. Not worth it (yet):
             // 'org.gradle.parallel': 'true'

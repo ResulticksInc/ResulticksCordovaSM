@@ -1,0 +1,50 @@
+{
+  "_from": "recordovaplugininh",
+  "_id": "recordovaplugininh@0.1.2",
+  "_inBundle": false,
+  "_integrity": "sha512-4+YQE5+9ZBsUiv84EzF2dGwgjf3GL4gLD70zFIKOu6KmKDYSLCuF+ILJO8QU0mIrxOiktAczb7LtS6rH5ziGmg==",
+  "_location": "/recordovaplugininh",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "recordovaplugininh",
+    "name": "recordovaplugininh",
+    "escapedName": "recordovaplugininh",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/recordovaplugininh/-/recordovaplugininh-0.1.2.tgz",
+  "_shasum": "a6c9b98c1887695760dec24f54328ddbd51ba6b6",
+  "_spec": "recordovaplugininh",
+  "_where": "/Users/Buvaneswaran/Documents/GitHub/Cordava/CordovaSample/ResulticksCordovaSM",
+  "author": {
+    "name": "ResultickInc"
+  },
+  "bugs": {
+    "url": "https://github.com/ResulticksInc/ReCordovaPlugin_0e0cce15_ffa7_484b_9b10_4703bc77bc16/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "",
+  "homepage": "https://github.com/ResulticksInc/ReCordovaPlugin_0e0cce15_ffa7_484b_9b10_4703bc77bc16#readme",
+  "keywords": [
+    "recordovaplugininh"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "recordovaplugininh",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ResulticksInc/ReCordovaPlugin_0e0cce15_ffa7_484b_9b10_4703bc77bc16.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.1.2"
+}

@@ -7,18 +7,18 @@
     "is_top_level": true,
     "variables": {}
   },
-  "cordova-plugin-fcm": {
+  "cordova-plugin-fcm-updated": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-fcm"
+      "id": "cordova-plugin-fcm-updated"
     },
     "is_top_level": true,
     "variables": {}
   },
-  "Resulticks-sdk-plugin": {
+  "resulticks-cordova-plugin-inh": {
     "source": {
       "type": "registry",
-      "id": "resulticksplugin@1.0.19"
+      "id": "recordovaplugininh"
     },
     "is_top_level": true,
     "variables": {}
