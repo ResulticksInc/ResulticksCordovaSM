@@ -47,15 +47,12 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         // Also if you intend on generating your own notifications as a result of a received FCM
         // message, here is where that should be initiated. See sendNotification method below.
         Log.d(TAG, "==> MyFirebaseMessagingService onMessageReceived");
-
-
         Map<String, Object> data = new HashMap<String, Object>();
         JSONObject jsonObject = new JSONObject();
         try {
             for (String key : remoteMessage.getData().keySet()) {
                 Object value = remoteMessage.getData().get(key);
                 Log.d(TAG, "\tKey: " + key + " Value: " + value);
-
                 jsonObject.put(key, "" + value);
                 data.put(key, value);
             }
@@ -67,10 +64,6 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
         if (ReAndroidSDK.getInstance(this).onReceivedCampaign(remoteMessage.getData()))
             return;
-
-
-
-
 
         if (remoteMessage.getNotification() != null) {
 
