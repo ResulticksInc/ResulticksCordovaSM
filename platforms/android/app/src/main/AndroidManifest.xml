@@ -61,6 +61,7 @@
         <meta-data
             android:name="resulticks.default_notification_color"
             android:resource="@color/background" />
+
         <meta-data
             android:name="resulticks.key"
             android:value="api_key_15182770-f6c3-43a7-936a-891e08bd27f5" />

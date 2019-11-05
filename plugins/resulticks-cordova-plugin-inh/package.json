@@ -1,27 +1,27 @@
 {
-  "_from": "recordovaplugininh",
-  "_id": "recordovaplugininh@0.1.2",
+  "_from": "recordovaplugininh@0.1.4",
+  "_id": "recordovaplugininh@0.1.4",
   "_inBundle": false,
-  "_integrity": "sha512-4+YQE5+9ZBsUiv84EzF2dGwgjf3GL4gLD70zFIKOu6KmKDYSLCuF+ILJO8QU0mIrxOiktAczb7LtS6rH5ziGmg==",
+  "_integrity": "sha512-QKrUkimwg69iTFOmUHypE6fSqa5R9mHXLDNa9fEg/R1j0XdnZ30ws78cYwiNOgbrFm5qctx9+J/4zl2kCl2AJw==",
   "_location": "/recordovaplugininh",
   "_phantomChildren": {},
   "_requested": {
-    "type": "tag",
+    "type": "version",
     "registry": true,
-    "raw": "recordovaplugininh",
+    "raw": "recordovaplugininh@0.1.4",
     "name": "recordovaplugininh",
     "escapedName": "recordovaplugininh",
-    "rawSpec": "",
+    "rawSpec": "0.1.4",
     "saveSpec": null,
-    "fetchSpec": "latest"
+    "fetchSpec": "0.1.4"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/recordovaplugininh/-/recordovaplugininh-0.1.2.tgz",
-  "_shasum": "a6c9b98c1887695760dec24f54328ddbd51ba6b6",
-  "_spec": "recordovaplugininh",
+  "_resolved": "https://registry.npmjs.org/recordovaplugininh/-/recordovaplugininh-0.1.4.tgz",
+  "_shasum": "aadceada0b7646d25e2e38f78546692e7c24ae08",
+  "_spec": "recordovaplugininh@0.1.4",
   "_where": "/Users/Buvaneswaran/Documents/GitHub/Cordava/CordovaSample/ResulticksCordovaSM",
   "author": {
     "name": "ResultickInc"
@@ -46,5 +46,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "0.1.2"
+  "version": "0.1.4"
 }

@@ -29,13 +29,13 @@
 		7D8F494FEA2C4C808135EEF2 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD3726FF57847229D6D1242 /* AddressBook.framework */; };
 		BCE2ACD715804DD4B40A334C /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA919E166BD40CC8E7D5731 /* libsqlite3.0.tbd */; };
 		8ED133A84BEA42DDA0A99E5C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F234A07A021425398B87C84 /* Security.framework */; };
-		879C0B922A8744F2839CF57F /* ReCordovaPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC52A30881544C2AC279A34 /* ReCordovaPlugin.m */; };
-		ABBC030B86924E87AD85C613 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C74EBE02B340899D604D10 /* Alamofire.framework */; };
-		3622C2D1B96D4F388AC1F4AA /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD3CF1512834127A39EFBB7 /* CryptoSwift.framework */; };
-		ACEEA879BDFE4DDDA428FBF2 /* IDZSwiftCommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F22C6E85B4488F93A7B920 /* IDZSwiftCommonCrypto.framework */; };
-		1D131FC03CF64DAE8554BF48 /* REIOSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 468E107BBB194F0789D251BA /* REIOSSDK.framework */; };
-		83242A751992471D911F9A15 /* SocketIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A437F250D1E040B8AD827D0C /* SocketIO.framework */; };
-		20E8A08DACE545ADA3BC747D /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAAFC0702375407EAA4DB566 /* Starscream.framework */; };
+		6A0937DC3D314A7892949E00 /* ReCordovaPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C66AFC9A6F43B3BF813625 /* ReCordovaPlugin.m */; };
+		E40EDF6BC37A41278927D0B1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DAEF157B3149A4845E1383 /* Alamofire.framework */; };
+		EAE37A55920D42AD8D1F3475 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B36ACC928C5941B59BF91CCD /* CryptoSwift.framework */; };
+		90C5E31D25F546568490E935 /* IDZSwiftCommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0168859DD34778A09965D4 /* IDZSwiftCommonCrypto.framework */; };
+		F947CD533BB14E9F8F347B81 /* REIOSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74AE9C2C071442C5A548ED1F /* REIOSSDK.framework */; };
+		B99E4BBA02CE443A948ADE12 /* SocketIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E100231009048C0919FC38E /* SocketIO.framework */; };
+		AE88D1DB026047BFB0353B43 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31CF17778BFB4F6BAF2D7ACC /* Starscream.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,13 +102,13 @@
 		3BD3726FF57847229D6D1242 /* AddressBook.framework */ = {isa = PBXFileReference; name = "AddressBook.framework"; path = "System/Library/Frameworks/AddressBook.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		CDA919E166BD40CC8E7D5731 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; name = "libsqlite3.0.tbd"; path = "usr/lib/libsqlite3.0.tbd"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = sourcecode.text-based-dylib-definition; explicitFileType = undefined; includeInIndex = 0; };
 		2F234A07A021425398B87C84 /* Security.framework */ = {isa = PBXFileReference; name = "Security.framework"; path = "System/Library/Frameworks/Security.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		4EC52A30881544C2AC279A34 /* ReCordovaPlugin.m */ = {isa = PBXFileReference; name = "ReCordovaPlugin.m"; path = "resulticks-cordova-plugin-inh/ReCordovaPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		90C74EBE02B340899D604D10 /* Alamofire.framework */ = {isa = PBXFileReference; name = "Alamofire.framework"; path = "HelloWorld/Plugins/resulticks-cordova-plugin-inh/Alamofire.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		CBD3CF1512834127A39EFBB7 /* CryptoSwift.framework */ = {isa = PBXFileReference; name = "CryptoSwift.framework"; path = "HelloWorld/Plugins/resulticks-cordova-plugin-inh/CryptoSwift.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		62F22C6E85B4488F93A7B920 /* IDZSwiftCommonCrypto.framework */ = {isa = PBXFileReference; name = "IDZSwiftCommonCrypto.framework"; path = "HelloWorld/Plugins/resulticks-cordova-plugin-inh/IDZSwiftCommonCrypto.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		468E107BBB194F0789D251BA /* REIOSSDK.framework */ = {isa = PBXFileReference; name = "REIOSSDK.framework"; path = "HelloWorld/Plugins/resulticks-cordova-plugin-inh/REIOSSDK.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		A437F250D1E040B8AD827D0C /* SocketIO.framework */ = {isa = PBXFileReference; name = "SocketIO.framework"; path = "HelloWorld/Plugins/resulticks-cordova-plugin-inh/SocketIO.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		EAAFC0702375407EAA4DB566 /* Starscream.framework */ = {isa = PBXFileReference; name = "Starscream.framework"; path = "HelloWorld/Plugins/resulticks-cordova-plugin-inh/Starscream.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		96C66AFC9A6F43B3BF813625 /* ReCordovaPlugin.m */ = {isa = PBXFileReference; name = "ReCordovaPlugin.m"; path = "resulticks-cordova-plugin-inh/ReCordovaPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		91DAEF157B3149A4845E1383 /* Alamofire.framework */ = {isa = PBXFileReference; name = "Alamofire.framework"; path = "HelloWorld/Plugins/resulticks-cordova-plugin-inh/Alamofire.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		B36ACC928C5941B59BF91CCD /* CryptoSwift.framework */ = {isa = PBXFileReference; name = "CryptoSwift.framework"; path = "HelloWorld/Plugins/resulticks-cordova-plugin-inh/CryptoSwift.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		7A0168859DD34778A09965D4 /* IDZSwiftCommonCrypto.framework */ = {isa = PBXFileReference; name = "IDZSwiftCommonCrypto.framework"; path = "HelloWorld/Plugins/resulticks-cordova-plugin-inh/IDZSwiftCommonCrypto.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		74AE9C2C071442C5A548ED1F /* REIOSSDK.framework */ = {isa = PBXFileReference; name = "REIOSSDK.framework"; path = "HelloWorld/Plugins/resulticks-cordova-plugin-inh/REIOSSDK.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		8E100231009048C0919FC38E /* SocketIO.framework */ = {isa = PBXFileReference; name = "SocketIO.framework"; path = "HelloWorld/Plugins/resulticks-cordova-plugin-inh/SocketIO.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		31CF17778BFB4F6BAF2D7ACC /* Starscream.framework */ = {isa = PBXFileReference; name = "Starscream.framework"; path = "HelloWorld/Plugins/resulticks-cordova-plugin-inh/Starscream.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,12 +130,12 @@
 				7D8F494FEA2C4C808135EEF2 /* AddressBook.framework in Frameworks */,
 				BCE2ACD715804DD4B40A334C /* libsqlite3.0.tbd in Frameworks */,
 				8ED133A84BEA42DDA0A99E5C /* Security.framework in Frameworks */,
-				ABBC030B86924E87AD85C613 /* Alamofire.framework in Frameworks */,
-				3622C2D1B96D4F388AC1F4AA /* CryptoSwift.framework in Frameworks */,
-				ACEEA879BDFE4DDDA428FBF2 /* IDZSwiftCommonCrypto.framework in Frameworks */,
-				1D131FC03CF64DAE8554BF48 /* REIOSSDK.framework in Frameworks */,
-				83242A751992471D911F9A15 /* SocketIO.framework in Frameworks */,
-				20E8A08DACE545ADA3BC747D /* Starscream.framework in Frameworks */,
+				E40EDF6BC37A41278927D0B1 /* Alamofire.framework in Frameworks */,
+				EAE37A55920D42AD8D1F3475 /* CryptoSwift.framework in Frameworks */,
+				90C5E31D25F546568490E935 /* IDZSwiftCommonCrypto.framework in Frameworks */,
+				F947CD533BB14E9F8F347B81 /* REIOSSDK.framework in Frameworks */,
+				B99E4BBA02CE443A948ADE12 /* SocketIO.framework in Frameworks */,
+				AE88D1DB026047BFB0353B43 /* Starscream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,12 +220,12 @@
 				3BD3726FF57847229D6D1242 /* AddressBook.framework */,
 				CDA919E166BD40CC8E7D5731 /* libsqlite3.0.tbd */,
 				2F234A07A021425398B87C84 /* Security.framework */,
-				90C74EBE02B340899D604D10 /* Alamofire.framework */,
-				CBD3CF1512834127A39EFBB7 /* CryptoSwift.framework */,
-				62F22C6E85B4488F93A7B920 /* IDZSwiftCommonCrypto.framework */,
-				468E107BBB194F0789D251BA /* REIOSSDK.framework */,
-				A437F250D1E040B8AD827D0C /* SocketIO.framework */,
-				EAAFC0702375407EAA4DB566 /* Starscream.framework */,
+				91DAEF157B3149A4845E1383 /* Alamofire.framework */,
+				B36ACC928C5941B59BF91CCD /* CryptoSwift.framework */,
+				7A0168859DD34778A09965D4 /* IDZSwiftCommonCrypto.framework */,
+				74AE9C2C071442C5A548ED1F /* REIOSSDK.framework */,
+				8E100231009048C0919FC38E /* SocketIO.framework */,
+				31CF17778BFB4F6BAF2D7ACC /* Starscream.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -257,7 +257,7 @@
 				FD81419814814871A1DD210B /* FCMPlugin.h */,
 				D089B664BB6842EEBFE65D72 /* AppDelegate+FCMPlugin.h */,
 				D5776FA7982849228E924DF8 /* Firebase.h */,
-				4EC52A30881544C2AC279A34 /* ReCordovaPlugin.m */,
+				96C66AFC9A6F43B3BF813625 /* ReCordovaPlugin.m */,
 			);
 			name = Plugins;
 			path = "HelloWorld/Plugins";
@@ -385,7 +385,7 @@
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				2652D1892FF84122BD69C040 /* FCMPlugin.m in Sources */,
 				B17074238FEF445B9D94F568 /* AppDelegate+FCMPlugin.m in Sources */,
-				879C0B922A8744F2839CF57F /* ReCordovaPlugin.m in Sources */,
+				6A0937DC3D314A7892949E00 /* ReCordovaPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +438,42 @@
 					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
 					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
 					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
 				);
 			};
 			name = Debug;
@@ -472,6 +508,42 @@
 					"\"HelloWorld/Plugins/cordova-plugin-fcm-updated\"",
 					"\"HelloWorld/Plugins/cordova-plugin-fcm-updated\"",
 					"\"HelloWorld/Plugins/cordova-plugin-fcm-updated\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
 					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
 					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",
 					"\"HelloWorld/Plugins/resulticks-cordova-plugin-inh\"",

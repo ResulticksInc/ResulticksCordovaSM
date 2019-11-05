@@ -18,7 +18,7 @@
   "resulticks-cordova-plugin-inh": {
     "source": {
       "type": "registry",
-      "id": "recordovaplugininh"
+      "id": "recordovaplugininh@0.1.4"
     },
     "is_top_level": true,
     "variables": {}

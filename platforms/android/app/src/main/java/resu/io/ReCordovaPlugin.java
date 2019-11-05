@@ -110,7 +110,7 @@ public class ReCordovaPlugin extends CordovaPlugin {
         return false;
     }
 
-    private void notificationPayLoadReceiver(JSONArray args, CallbackContext callbackContext) {
+    private void notificationPayLoadReceiver(final JSONArray args, CallbackContext callbackContext) {
         NotificationCallbacks = callbackContext;
     }
 
@@ -129,7 +129,7 @@ public class ReCordovaPlugin extends CordovaPlugin {
         }
     }
 
-    private void getNotification(JSONArray args, CallbackContext callbackContext) {
+    private void getNotification(final JSONArray args, CallbackContext callbackContext) {
 
         try {
             notificationByObject = ReAndroidSDK.getInstance(cordova.getActivity()).getNotificationByObject();
@@ -142,102 +142,110 @@ public class ReCordovaPlugin extends CordovaPlugin {
 
     }
 
-    private void locationUpdate(JSONArray message, CallbackContext callbackContext) {
+    private void locationUpdate(final JSONArray message, CallbackContext callbackContext) {
 
-        cordova.getThreadPool().execute(() -> {
+        cordova.getActivity().runOnUiThread(new Runnable() {
+            public void run() {
 
-            if (message != null && message.length() > 0) {
-                try {
-                    JSONObject jsonObject = message.getJSONObject(0);
+                if (message != null && message.length() > 0) {
+                    try {
+                        JSONObject jsonObject = message.getJSONObject(0);
 
-                    double latitude = jsonObject.optDouble("latitude");
-                    double longitude = jsonObject.optDouble("longitude");
-                    if (latitude != 0 && longitude != 0)
-                        ReAndroidSDK.getInstance(cordova.getActivity()).onLocationUpdate(latitude, longitude);
+                        double latitude = jsonObject.optDouble("latitude");
+                        double longitude = jsonObject.optDouble("longitude");
+                        if (latitude != 0 && longitude != 0)
+                            ReAndroidSDK.getInstance(cordova.getActivity()).onLocationUpdate(latitude, longitude);
 
-                } catch (Exception e) {
-                    Log.e("User events Exception: ", String.valueOf(e.getMessage()));
-                }
-            } else {
-                Log.e("User events Exception: ", "Expected one non-empty string argument.");
-            }
-
-        });
-
-    }
-
-
-    private void screenNavigation(JSONArray message, CallbackContext callbackContext) {
-
-        cordova.getThreadPool().execute(() -> {
-            if (message != null && message.length() > 0) {
-                try {
-                    JSONObject jsonObject = message.getJSONObject(0);
-                    screenTracking(jsonObject.optString("screenName"));
-                    OldScreenName = newScreenName;
-                    newScreenName = jsonObject.optString("screenName");
-                } catch (Exception e) {
-                    Log.e("userNavigation Exception: ", String.valueOf(e.getMessage()));
-                }
-
-            } else {
-                Log.e("userNavigation Exception: ", "Expected one non-empty string argument.");
-            }
-        });
-
-    }
-
-    private void userRegister(JSONArray message, CallbackContext callbackContext) {
-
-        cordova.getThreadPool().execute(() -> {
-            if (message != null && message.length() > 0) {
-                try {
-                    JSONObject jsonObject = message.getJSONObject(0);
-                    MRegisterUser registerUser = new MRegisterUser();
-                    registerUser.setUserUniqueId(jsonObject.optString("uniqueId"));
-                    registerUser.setName(jsonObject.optString("name"));
-                    registerUser.setEmail(jsonObject.optString("email"));
-                    registerUser.setPhone(jsonObject.optString("phone"));
-                    registerUser.setAge(jsonObject.optString("age"));
-                    registerUser.setGender(jsonObject.optString("gender"));
-                    registerUser.setDeviceToken(jsonObject.optString("token"));
-                    registerUser.setProfileUrl(jsonObject.optString("profileUrl"));
-                    ReAndroidSDK.getInstance(cordova.getActivity()).onDeviceUserRegister(registerUser);
-                } catch (Exception e) {
-                    Log.e("register Exception: ", String.valueOf(e.getMessage()));
-                }
-
-            } else {
-
-                Log.e("register Exception: ", "Expected one non-empty string argument.");
-            }
-        });
-    }
-
-    private void customEvent(JSONArray message, CallbackContext callbackContext) {
-        cordova.getThreadPool().execute(() -> {
-            if (message != null && message.length() > 0) {
-                try {
-                    JSONObject jsonObject = message.getJSONObject(0);
-                    String eventName = jsonObject.optString("eventName");
-                    JSONObject eventData = jsonObject.optJSONObject("data");
-
-                    if (TextUtils.isEmpty(eventName)) {
-                        Log.e("Event name can't be empty!", "");
-                        return;
+                    } catch (Exception e) {
+                        Log.e("User events Exception: ", String.valueOf(e.getMessage()));
                     }
-                    if (TextUtils.isEmpty(eventData.toString()))
-                        ReAndroidSDK.getInstance(cordova.getActivity()).onTrackEvent(eventName);
-                    else
-                        ReAndroidSDK.getInstance(cordova.getActivity()).onTrackEvent(eventData, eventName);
-
-                } catch (Exception e) {
-                    Log.e("User events Exception: ", String.valueOf(e.getMessage()));
+                } else {
+                    Log.e("User events Exception: ", "Expected one non-empty string argument.");
                 }
-            } else {
-                Log.e("User events Exception: ", "Expected one non-empty string argument.");
             }
 
+        });
+
+    }
+
+
+    private void screenNavigation(final JSONArray message, CallbackContext callbackContext) {
+
+        cordova.getActivity().runOnUiThread(new Runnable() {
+            public void run() {
+                if (message != null && message.length() > 0) {
+                    try {
+                        JSONObject jsonObject = message.getJSONObject(0);
+                        screenTracking(jsonObject.optString("screenName"));
+                        OldScreenName = newScreenName;
+                        newScreenName = jsonObject.optString("screenName");
+                    } catch (Exception e) {
+                        Log.e("userNavigation Exception: ", String.valueOf(e.getMessage()));
+                    }
+
+                } else {
+                    Log.e("userNavigation Exception: ", "Expected one non-empty string argument.");
+                }
+            }
+        });
+
+    }
+
+    private void userRegister(final JSONArray message, CallbackContext callbackContext) {
+
+        cordova.getActivity().runOnUiThread(new Runnable() {
+            public void run() {
+                if (message != null && message.length() > 0) {
+                    try {
+                        JSONObject jsonObject = message.getJSONObject(0);
+                        MRegisterUser registerUser = new MRegisterUser();
+                        registerUser.setUserUniqueId(jsonObject.optString("uniqueId"));
+                        registerUser.setName(jsonObject.optString("name"));
+                        registerUser.setEmail(jsonObject.optString("email"));
+                        registerUser.setPhone(jsonObject.optString("phone"));
+                        registerUser.setAge(jsonObject.optString("age"));
+                        registerUser.setGender(jsonObject.optString("gender"));
+                        registerUser.setDeviceToken(jsonObject.optString("token"));
+                        registerUser.setProfileUrl(jsonObject.optString("profileUrl"));
+                        ReAndroidSDK.getInstance(cordova.getActivity()).onDeviceUserRegister(registerUser);
+                    } catch (Exception e) {
+                        Log.e("register Exception: ", String.valueOf(e.getMessage()));
+                    }
+
+                } else {
+
+                    Log.e("register Exception: ", "Expected one non-empty string argument.");
+                }
+            }
+        });
+    }
+
+    private void customEvent(final JSONArray message, CallbackContext callbackContext) {
+
+        cordova.getActivity().runOnUiThread(new Runnable() {
+            public void run() {
+                if (message != null && message.length() > 0) {
+                    try {
+                        JSONObject jsonObject = message.getJSONObject(0);
+                        String eventName = jsonObject.optString("eventName");
+                        JSONObject eventData = jsonObject.optJSONObject("data");
+
+                        if (TextUtils.isEmpty(eventName)) {
+                            Log.e("Event name can't be empty!", "");
+                            return;
+                        }
+                        if (TextUtils.isEmpty(eventData.toString()))
+                            ReAndroidSDK.getInstance(cordova.getActivity()).onTrackEvent(eventName);
+                        else
+                            ReAndroidSDK.getInstance(cordova.getActivity()).onTrackEvent(eventData, eventName);
+
+                    } catch (Exception e) {
+                        Log.e("User events Exception: ", String.valueOf(e.getMessage()));
+                    }
+                } else {
+                    Log.e("User events Exception: ", "Expected one non-empty string argument.");
+                }
+            }
         });
     }
 
@@ -262,7 +270,6 @@ public class ReCordovaPlugin extends CordovaPlugin {
 
         }
     }
-
 
     @Override
     public void onPause(boolean multitasking) {
