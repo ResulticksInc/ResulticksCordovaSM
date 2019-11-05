@@ -6,21 +6,5 @@
     },
     "is_top_level": true,
     "variables": {}
-  },
-  "cordova-plugin-fcm-updated": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-fcm-updated"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
-  "resulticks-cordova-plugin-inh": {
-    "source": {
-      "type": "registry",
-      "id": "recordovaplugininh@0.1.4"
-    },
-    "is_top_level": true,
-    "variables": {}
   }
 }
