@@ -2,7 +2,7 @@
 
 platform :ios, '9.0'
 
-target 'ResulticksSample' do
-	project 'ResulticksSample.xcodeproj'
+target 'HelloWorld' do
+	project 'HelloWorld.xcodeproj'
 
 end

@@ -7,7 +7,13 @@
     "files": {}
   },
   "installed_plugins": {
+    "cordova-plugin-fcm-updated": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    },
     "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    },
+    "resulticks-cordova-plugin-inh": {
       "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
     }
   },

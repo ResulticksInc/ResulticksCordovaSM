@@ -1,0 +1,68 @@
+{
+  "_from": "cordova-plugin-fcm-updated",
+  "_id": "cordova-plugin-fcm-updated@1.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-tO4KwkJRawu01qHDw2XghLUw/qvztjt2KqHwtwSAx9g7ww7q+wrqNQR8VATkxWUYz4bPq2z5We+L8awaCMWKug==",
+  "_location": "/cordova-plugin-fcm-updated",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-fcm-updated",
+    "name": "cordova-plugin-fcm-updated",
+    "escapedName": "cordova-plugin-fcm-updated",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-fcm-updated/-/cordova-plugin-fcm-updated-1.0.1.tgz",
+  "_shasum": "b88ba741519d019faaea58a935146c49c132bea9",
+  "_spec": "cordova-plugin-fcm-updated",
+  "_where": "/Users/Buvaneswaran/Documents/GitHub/Cordava/CordovaSample/ResulticksCordovaSM",
+  "author": {
+    "name": "Felipe Echanique Torres",
+    "email": "felipe.echanique@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/fcarreno/cordova-plugin-fcm/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-fcm-updated",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "cordova_name": "Cordova FCM Push Plugin",
+  "deprecated": false,
+  "description": "Google Firebase Cloud Messaging Cordova Push Plugin",
+  "engines": [],
+  "englishdoc": "",
+  "homepage": "https://github.com/fcarreno/cordova-plugin-fcm#readme",
+  "issue": "",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "notifications",
+    "push",
+    "firebase",
+    "fcm",
+    "ios",
+    "android",
+    "cordova"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-fcm-updated",
+  "repo": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fcarreno/cordova-plugin-fcm.git"
+  },
+  "version": "1.0.1"
+}

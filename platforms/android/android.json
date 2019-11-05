@@ -1,0 +1,97 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "res/xml/config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"FCMPlugin\"><param name=\"android-package\" value=\"com.gae.scaffolder.plugin.FCMPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"ReCordovaPlugin\"><param name=\"android-package\" value=\"resu.io.ReCordovaPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "AndroidManifest.xml": {
+        "parents": {
+          "/manifest/application": [
+            {
+              "xml": "<activity android:exported=\"true\" android:launchMode=\"singleTop\" android:name=\"com.gae.scaffolder.plugin.FCMPluginActivity\"><intent-filter><action android:name=\"FCM_PLUGIN_ACTIVITY\" /><category android:name=\"android.intent.category.DEFAULT\" /></intent-filter></activity>",
+              "count": 1
+            },
+            {
+              "xml": "<service android:name=\"com.gae.scaffolder.plugin.MyFirebaseMessagingService\"><intent-filter><action android:name=\"com.google.firebase.MESSAGING_EVENT\" /></intent-filter></service>",
+              "count": 1
+            },
+            {
+              "xml": "<service android:name=\"com.gae.scaffolder.plugin.MyFirebaseInstanceIDService\"><intent-filter><action android:name=\"com.google.firebase.INSTANCE_ID_EVENT\" /></intent-filter></service>",
+              "count": 1
+            },
+            {
+              "xml": "<meta-data android:name=\"resulticks.default_notification_icon\" android:resource=\"@mipmap/ic_app_icon\" />",
+              "count": 1
+            },
+            {
+              "xml": "<meta-data android:name=\"resulticks.default_notification_icon_transparent\" android:resource=\"@mipmap/ic_app_icon_transparent\" />",
+              "count": 1
+            },
+            {
+              "xml": "<meta-data android:name=\"resulticks.default_notification_color\" android:resource=\"@color/notificationColor\" />",
+              "count": 1
+            },
+            {
+              "xml": "<meta-data android:name=\"resulticks.key\" android:value=\"api_key_15182770-f6c3-43a7-936a-891e08bd27f5\" />",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.example.hello"
+    },
+    "cordova-plugin-fcm-updated": {
+      "PACKAGE_NAME": "com.example.hello"
+    },
+    "resulticks-cordova-plugin-inh": {
+      "PACKAGE_NAME": "com.example.hello"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "cordova-plugin-fcm-updated.FCMPlugin",
+      "file": "plugins/cordova-plugin-fcm-updated/www/FCMPlugin.js",
+      "pluginId": "cordova-plugin-fcm-updated",
+      "clobbers": [
+        "FCMPlugin"
+      ]
+    },
+    {
+      "id": "resulticks-cordova-plugin-inh.ReCordovaPlugin",
+      "file": "plugins/resulticks-cordova-plugin-inh/www/ReCordovaPlugin.js",
+      "pluginId": "resulticks-cordova-plugin-inh",
+      "clobbers": [
+        "ReCordovaPlugin"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-whitelist": "1.3.4",
+    "cordova-plugin-fcm-updated": "1.0.1",
+    "resulticks-cordova-plugin-inh": "0.1.4"
+  }
+}
