@@ -15,10 +15,10 @@
     "is_top_level": true,
     "variables": {}
   },
-  "resulticks-cordova-plugin-inh": {
+  "resulticks-cordova-plugin": {
     "source": {
       "type": "registry",
-      "id": "recordovaplugininh@0.1.4"
+      "id": "recordovaplugin@1.0.32"
     },
     "is_top_level": true,
     "variables": {}

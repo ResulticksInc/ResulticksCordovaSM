@@ -30,7 +30,6 @@ buildscript {
         classpath 'com.android.tools.build:gradle:3.3.0'
     }
 }
-
 // Allow plugins to declare Maven dependencies via build-extras.gradle.
 allprojects {
     repositories {
@@ -40,6 +39,11 @@ allprojects {
         maven {
             url "https://jitpack.io"
             credentials { username authTokenResulticks }
+        }
+    }
+    configurations.all {
+        resolutionStrategy {
+            cacheChangingModulesFor 0, 'seconds'
         }
     }
 }
@@ -277,7 +281,7 @@ dependencies {
     implementation(project(path: ":CordovaLib"))
     implementation "com.google.firebase:firebase-core:16.0.8"
     implementation "com.google.firebase:firebase-messaging:17.5.0"
-    implementation "io.resu:ReAndroidSDK_0e0cce15_ffa7_484b_9b10_4703bc77bc16:-SNAPSHOT"
+    implementation "io.resu:ReAndroidSDK_54b865b8_5123_461a_accf_d12ed01ce383:-SNAPSHOT"
     // SUB-PROJECT DEPENDENCIES END
 
 }

@@ -48,6 +48,8 @@ exec(function(result){ console.log("FCMPlugin Ready OK") }, function(result){ co
 
 
 
+
+
 var fcmPlugin = new FCMPlugin();
 module.exports = fcmPlugin;
 

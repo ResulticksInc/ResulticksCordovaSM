@@ -6,8 +6,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.media.RingtoneManager;
 import android.net.Uri;
-import android.support.v4.app.NotificationCompat;
 import android.util.Log;
+
+import androidx.core.app.NotificationCompat;
 
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
@@ -61,12 +62,15 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         }
 
 
+       String method ="notificationReceived";
 
-        if (ReAndroidSDK.getInstance(this).onReceivedCampaign(remoteMessage.getData()))
+        if (ReAndroidSDK.getInstance(this).onReceivedCampaign(remoteMessage.getData())) {
+            String callBack = "javascript:" + method + "('" +remoteMessage.getData().toString()+ "')";
+            ReCordovaPlugin.gWebView.sendJavascript(callBack);
             return;
+        }
 
         if (remoteMessage.getNotification() != null) {
-
             Log.d(TAG, "\tNotification Title: " + remoteMessage.getNotification().getTitle());
             Log.d(TAG, "\tNotification Message: " + remoteMessage.getNotification().getBody());
             simpleNotification(remoteMessage.getNotification().getTitle(), remoteMessage.getNotification().getBody());
@@ -74,7 +78,6 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         } else if (!data.keySet().isEmpty()) {
             Log.d(TAG, "\tNotification Data: " + data.toString());
             //customNotification(data.get("title").toString(), data.get("summary").toString(), data);
-
             // For data messages, besides showing a custom notification on status bar (above),
             // we want to push the data to the app, if it's currently running in foreground
             // (in order to store/manipulate the data/event in case the user misses the notification).
@@ -168,14 +171,10 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
         Intent intent = new Intent(this, FCMPluginActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
-
         intent.putExtra("notificationOnly", "yes");
-
-
         PendingIntent pendingIntent = PendingIntent.getActivity(this, random.nextInt(), intent, PendingIntent.FLAG_UPDATE_CURRENT);
         // Using same approach as then one used for custom notification
         //PendingIntent pendingIntent = PendingIntent.getActivity(this, 0 , intent, PendingIntent.FLAG_ONE_SHOT);
-
         Uri defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
         int notificationIconId = getApplicationContext().getResources().getIdentifier("notification_icon", "drawable", getPackageName());
         NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this, FCMPlugin.CHANNEL_ID)
@@ -185,10 +184,8 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
                 .setAutoCancel(true)
                 .setSound(defaultSoundUri)
                 .setContentIntent(pendingIntent);
-
         NotificationManager notificationManager =
                 (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-
         notificationManager.notify(random.nextInt(), notificationBuilder.build());
     }
 

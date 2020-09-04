@@ -4,15 +4,12 @@ import android.app.Activity;
 import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
-import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 
-import java.util.Map;
 import java.util.HashMap;
+import java.util.Map;
 
 public class FCMPluginActivity extends Activity {
     private static String TAG = "FCMPlugin";
@@ -30,13 +27,13 @@ public class FCMPluginActivity extends Activity {
 
         Map<String, Object> data = new HashMap<String, Object>();
         if (getIntent().getExtras() != null) {
-          Log.d(TAG, "==> USER TAPPED NOTFICATION");
-          data.put("wasTapped", true);
-          for (String key : getIntent().getExtras().keySet()) {
-                    String value = ""+getIntent().getExtras().get(key);
-                    Log.d(TAG, "\tKey: " + key + " Value: " + value);
-                    data.put(key, value);
-           }
+            Log.d(TAG, "==> USER TAPPED NOTFICATION");
+            data.put("wasTapped", true);
+            for (String key : getIntent().getExtras().keySet()) {
+                String value = "" + getIntent().getExtras().get(key);
+                Log.d(TAG, "\tKey: " + key + " Value: " + value);
+                data.put(key, value);
+            }
         }
 
 
@@ -48,8 +45,8 @@ public class FCMPluginActivity extends Activity {
     private void forceMainActivityReload() {
         PackageManager pm = getPackageManager();
         Intent launchIntent = pm.getLaunchIntentForPackage(getApplicationContext().getPackageName());
-        if(!getIntent().hasExtra("notificationOnly")){
-          launchIntent.putExtra("launchedFromDataNotification", true);
+        if (!getIntent().hasExtra("notificationOnly")) {
+            launchIntent.putExtra("launchedFromDataNotification", true);
         }
         startActivity(launchIntent);
     }
@@ -57,21 +54,21 @@ public class FCMPluginActivity extends Activity {
     @Override
     protected void onResume() {
         super.onResume();
-		Log.d(TAG, "==> FCMPluginActivity onResume");
+        Log.d(TAG, "==> FCMPluginActivity onResume");
         final NotificationManager notificationManager = (NotificationManager) this.getSystemService(Context.NOTIFICATION_SERVICE);
         notificationManager.cancelAll();
     }
 
-	@Override
-	public void onStart() {
-		super.onStart();
-		Log.d(TAG, "==> FCMPluginActivity onStart");
-	}
+    @Override
+    public void onStart() {
+        super.onStart();
+        Log.d(TAG, "==> FCMPluginActivity onStart");
+    }
 
-	@Override
-	public void onStop() {
-		super.onStop();
-		Log.d(TAG, "==> FCMPluginActivity onStop");
-	}
+    @Override
+    public void onStop() {
+        super.onStop();
+        Log.d(TAG, "==> FCMPluginActivity onStop");
+    }
 
 }

@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+http://www.apache.org/licenses/LICENSE-2.0
 
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
 -->
 <html>
 <!--  -->
 
 <head>
     <!--
-        Customize this policy to fit your own app's needs. For more guidance, see:
-            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-        Some notes:
-            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
-        -->
+    Customize this policy to fit your own app's needs. For more guidance, see:
+    https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+    Some notes:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+    * Enable inline JS: add 'unsafe-inline' to default-src
+  -->
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
@@ -38,108 +38,233 @@
 </head>
 
 <body>
-    <div class="app">
-        <h1>Apache Cordova</h1>
-        <div id="deviceready" class="blink">
-            <p class="event listening">Connecting to Device</p>
-            <p class="event received">Device is Ready</p>
+<div class="app">
+    <div id="deviceready" class="blink">
+        <!-- <button class="mybtn" id="reg" onclick="register()">User-Registration</button>
+         <button class="mybtn" id="event" onclick="customEvent()">Custom-Event</button>
+         <button class="mybtn" id="location" onclick="locationUpdate()">Location-Update</button>
+         <button class="mybtn" id="notification" onclick="getNotification()">Get-Notification-List
+         </button>-->
+        <button class="mybtn" id="delete" onclick="deleteNotification()">Delete-Notification
+        </button>
+        <button class="mybtn" id="deleteByNotificationId" onclick="deleteByNotificationID()">Delete
+            by Notification Id
+        </button>
+        <button class="mybtn" id="deleteByCampaignId" onclick="deleteByNotificationCampaignID()">
+            Delete by Campaign Id
+        </button>
+        <button class="mybtn" id="readcount" onclick="getReadNotification()">Read Notification
+            count
+        </button>
+        <button class="mybtn" id="unreadcount" onclick="getUnReadNotification()">Un Read
+            Notification count
+        </button>
+        <button class="mybtn" id="notificationread" onclick="setReadNotification()"> Notification
+            Read count
+        </button>
+        <button class="mybtn" id="notificationunread" onclick="setUnReadNotification()">
+            Notification UnRead count
+        </button>
 
-            <button onclick="register()">AfterLoginsucess</button>
+        <button class="mybtn" id="notificationclicked" onclick="notificationbtnClicked()">
+            notificationClicked
+        </button>
 
-            <button onclick="customEvent()">customEvent</button>
-
-            <button onclick="locationUpdate()">LocationUpdate</button>
-
-            <button onclick="getReNotification()">Get Notification</button>
-
-
-        </div>
+        <button class="mybtn" id="next" onclick="goToNext()">Next-Screen</button>
+        <div id="mylist"></div>
     </div>
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script>
-        function customAlert() {
-            //alert("welcome");
-            ReCordovaPlugin.getNotification("getNotification", ReNotificationReceived);
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="https://sdk.resu.io/Scripts/jquery-1.7.1.min.js"></script>
+<script>
+    function goToNext() {
+      window.location.href = "secondScreen.html"
+    }
+
+    function getNotification() {
+
+      ReCordovaPlugin.getNotification("something", function sucess(value) {
+        alert(value)
+      }, function failure(err) {
+        alert(err)
+      });
+    }
+
+
+ function getReadNotification() {
+
+      ReCordovaPlugin.getReadNotificationCount("something", function sucess(value) {
+        alert(value)
+      }, function failure(err) {
+        alert(err)
+      });
+    }
+
+ function getUnReadNotification() {
+
+      ReCordovaPlugin.getUnReadNotificationCount("something", function sucess(value) {
+        alert(value)
+      }, function failure(err) {
+        alert(err)
+      });
+    }
+
+
+    function setReadNotification() {
+
+     ReCordovaPlugin.getNotification("something", function sucess(value) {
+        alert(value)
+        var value1 = JSON.parse(value)
+       data = {
+        campaignId:value1[0].campaignId
         }
+        ReCordovaPlugin.readNotification(data);
+
+      }, function failure(err) {
+
+        alert(err)
+      });
+    }
 
 
-        function locationUpdate() {
-            var location = {
-                latitude: 13.067439,
-                longitude: 80.237617
-            }
+   function notificationbtnClicked() {
 
-            ReCordovaPlugin.locationUpdate(location);
+     ReCordovaPlugin.getNotification("something", function sucess(value) {
+        //alert(value)
+        var value1 = JSON.parse(value);
+
+        try{
+        var actions=JSON.parse(value1[0].customActions);
+        var actionId =actions[0].actionId
+        }catch(e)
+        {
+        alert(e);
         }
+       data = {
+        campaignId:value1[0].campaignId,
+        actionId:actionId,
+         }
+        ReCordovaPlugin.notificationCTAClicked(data);
+
+      }, function failure(err) {
+
+        alert(err)
+      });
+    }
 
 
-        function register() {
-            var resUser = {
-                uniqueId: 'BZOPP0365H',
-                name: 'buvanesh',
-                age: '58',
-                email: 'buvanesh@gmail.com',
-                phone: '9786483047',
-                gender: 'male',
-                token: 'ftBTbiSgYdU:APA91bFuoBDx0o8MlD-aKfJRvmQszZ0_NLNPHplVCF91fQYRIqp2SXWqteWDg_qa5YzQAcQ71NjNj_rfqXa7Woq2decTlN81sZXopLO5nkwgsNlQVChW866DoONt27bKtA2QQGCOxNKn',
-                profileUrl: ''
-            }
-            ReCordovaPlugin.userRegister(resUser);
+ function setUnReadNotification() {
+
+ ReCordovaPlugin.getNotification("something", function sucess(value) {
+
+        alert(value)
+
+        var value1 = JSON.parse(value)
+
+       data = {
+        campaignId:value1[0].campaignId
         }
+        ReCordovaPlugin.unReadNotification(data);
+      }, function failure(err) {
+        alert(err)
+      });
+    }
 
-        function customEvent() {
-            //alert('Hai2');-->
-            var resEvent1 = {
-                eventName: 'App Opened'
-            }
+   function deleteByNotificationID() {
 
-            var resEvent2 = {
-                eventName: 'Product Purchased',
-                data: {
-                    productId: 'P234234',
-                    productName: 'Mobile Phone'
-                }
-            }
-            ReCordovaPlugin.customEvent(resEvent2);
+     ReCordovaPlugin.getNotification("something", function sucess(value) {
+        alert(value)
 
+        var value1 = JSON.parse(value)
+
+       data = {
+        notificationId:value1[0].notificationId
         }
+        ReCordovaPlugin.deleteNotificationByNotificationId(data);
+      }, function failure(err) {
+        alert(err)
+      });
+    }
 
-        function customEvent() {
-            //alert('Hai2');-->
-            var resEvent1 = {
-                eventName: 'App Opened'
-            }
+   function deleteByNotificationCampaignID() {
 
-            var resEvent2 = {
-                eventName: 'Product Purchased',
-                data: {
-                    productId: 'P234234',
-                    productName: 'Mobile Phone'
-                }
-            }
-            ReCordovaPlugin.customEvent(resEvent2);
+   ReCordovaPlugin.getNotification("something", function sucess(value) {
+        alert(value)
 
+        var value1 = JSON.parse(value)
+
+       data = {
+        campaignId:value1[0].campaignId
         }
+        ReCordovaPlugin.deleteNotificationByCampaignId(data);
+      }, function failure(err) {
+        alert(err)
+      });
+    }
+
+
+    function deleteNotification() {
+
+     ReCordovaPlugin.getNotification("something", function sucess(value) {
+        alert(value)
+
+        var value1 = JSON.parse(value)
+
+       ReCordovaPlugin.deleteNotification(value1[0]);
+      }, function failure(err) {
+        alert(err)
+      });
+    }
 
 
 
-        var notificationval;
+    function locationUpdate() {
+      var location = {
+        latitude: 13.067439,
+        longitude: 80.237617
+      }
 
-        function getReNotification() {
+      ReCordovaPlugin.locationUpdate(location);
+    }
 
-            alert("welcome");
-            ReCordovaPlugin.getNotification("getNotification", ReNotificationReceived);
+    function register() {
 
+      var resUser = {
+        userUniqueId: 'BZOPP0365H',
+        name: 'buvanesh',
+        age: '58',
+        email: 'buvanesh@gmail.com',
+        phone: '9786483048',
+        gender: 'male',
+        deviceToken: 'ftBTbiSgYdU:APA91bFuoBDx0o8MlD-aKfJRvmQszZ0_NLNPHplVCF91fQYRIqp2SXWqteWDg_qa5YzQAcQ71NjNj_rfqXa7Woq2decTlN81sZXopLO5nkwgsNlQVChW866DoONt27bKtA2QQGCOxNKn',
+        profileUrl: 'ytutuu'
+      }
+      ReCordovaPlugin.userRegister(resUser);
+    }
+
+    function customEvent() {
+      var resEvent1 = {
+        eventName: 'App Opened'
+      }
+
+      var resEvent2 = {
+        eventName: 'Product Purchased',
+        data: {
+          productId: 'P234234',
+          productName: 'Mobile Phone'
         }
+      }
+      ReCordovaPlugin.customEvent(resEvent2);
+    }
+
+    function notificationReceived(data) {
+      alert(getInnercontent());
+
+    }
 
 
-        function deleteReNotification(position) {
-
-            ReCordovaPlugin.deleteNotification(notificationval[position])
-
-        }
-    </script>
+</script>
 
 </body>
 

@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
@@ -18,7 +17,6 @@
 		3AFA8D9864B54F928BA75108 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAF704169764614B9876AF5 /* libc++.tbd */; };
 		61C99212A040422B865A8E72 /* GoogleSymbolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97DB149AB3C641DCBE4AC96A /* GoogleSymbolUtilities.framework */; };
 		6497BCC46D4F42609797D9A5 /* GoogleIPhoneUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A2788D1D574434B0EC0A8A /* GoogleIPhoneUtilities.framework */; };
-		6A0937DC3D314A7892949E00 /* ReCordovaPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C66AFC9A6F43B3BF813625 /* ReCordovaPlugin.m */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
 		72A0133C068F4A6D986EEDC5 /* GoogleInterchangeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A74424DBE240449A039D75 /* GoogleInterchangeUtilities.framework */; };
 		7D8F494FEA2C4C808135EEF2 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD3726FF57847229D6D1242 /* AddressBook.framework */; };
@@ -30,19 +28,14 @@
 		BCE2ACD715804DD4B40A334C /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA919E166BD40CC8E7D5731 /* libsqlite3.0.tbd */; };
 		E61BA999C74D4B9785F50485 /* FirebaseMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73BCFD644E644ABB690A0C5 /* FirebaseMessaging.framework */; };
 		F0A7855297FC4A9BB7D21F07 /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 202CBADE051D49E087A4F165 /* FirebaseInstanceID.framework */; };
-		FF9E10642371914900F07538 /* REIOSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74AE9C2C071442C5A548ED1F /* REIOSSDK.framework */; };
-		FF9E10652371914900F07538 /* REIOSSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 74AE9C2C071442C5A548ED1F /* REIOSSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FF9E10672371914B00F07538 /* SocketIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E100231009048C0919FC38E /* SocketIO.framework */; };
-		FF9E10682371914B00F07538 /* SocketIO.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8E100231009048C0919FC38E /* SocketIO.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FF9E10692371914D00F07538 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31CF17778BFB4F6BAF2D7ACC /* Starscream.framework */; };
-		FF9E106A2371914D00F07538 /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 31CF17778BFB4F6BAF2D7ACC /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FF9E106B2371915200F07538 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DAEF157B3149A4845E1383 /* Alamofire.framework */; };
-		FF9E106C2371915200F07538 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91DAEF157B3149A4845E1383 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FF9E106D2371915400F07538 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B36ACC928C5941B59BF91CCD /* CryptoSwift.framework */; };
-		FF9E106E2371915400F07538 /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B36ACC928C5941B59BF91CCD /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FF9E106F2371915900F07538 /* IDZSwiftCommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0168859DD34778A09965D4 /* IDZSwiftCommonCrypto.framework */; };
-		FF9E10702371915900F07538 /* IDZSwiftCommonCrypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0168859DD34778A09965D4 /* IDZSwiftCommonCrypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FF9E1072237191BF00F07538 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF9E1071237191BF00F07538 /* GoogleService-Info.plist */; };
+		2CD63FE4963D4BDB939DB794 /* ReCordovaPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D030DC8ED0240BDA56627D0 /* ReCordovaPlugin.m */; };
+		B1E898D29D8346E682E1B119 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61F2E0168B9E41D5875F70F7 /* Alamofire.framework */; };
+		67D2D52D236D4E47BE9875C8 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F7EE953F737492786523028 /* CryptoSwift.framework */; };
+		ABD7648F8B0249DDB22CF346 /* IDZSwiftCommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6661776B33433E8FC03965 /* IDZSwiftCommonCrypto.framework */; };
+		635DEE9946C44F4E8C6DD6B6 /* REIOSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F48BFFD82B842D686CA4C9D /* REIOSSDK.framework */; };
+		10BEA0EF74CE4A2285AB2A2B /* SocketIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F71BAE0CAF411FB848A7AC /* SocketIO.framework */; };
+		3406137837DF446B88FA0A74 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF56EA8FE0524E91A2BBB92D /* Starscream.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,22 +99,15 @@
 		3047A50F1AB8059700498E2A /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-debug.xcconfig"; path = "cordova/build-debug.xcconfig"; sourceTree = SOURCE_ROOT; };
 		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
 		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
-		31CF17778BFB4F6BAF2D7ACC /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = "HelloWorld/Plugins/resulticks-cordova-plugin-inh/Starscream.framework"; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* HelloWorld-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HelloWorld-Prefix.pch"; sourceTree = "<group>"; };
 		3BD3726FF57847229D6D1242 /* AddressBook.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		629A1D8BC3824D6CB80468F9 /* AppDelegate+FCMPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate+FCMPlugin.m"; path = "cordova-plugin-fcm-updated/AppDelegate+FCMPlugin.m"; sourceTree = "<group>"; };
 		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = HelloWorld/CDVLaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		6DAF704169764614B9876AF5 /* libc++.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		74AE9C2C071442C5A548ED1F /* REIOSSDK.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = REIOSSDK.framework; path = "HelloWorld/Plugins/resulticks-cordova-plugin-inh/REIOSSDK.framework"; sourceTree = "<group>"; };
-		7A0168859DD34778A09965D4 /* IDZSwiftCommonCrypto.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = IDZSwiftCommonCrypto.framework; path = "HelloWorld/Plugins/resulticks-cordova-plugin-inh/IDZSwiftCommonCrypto.framework"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* HelloWorld-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "HelloWorld-Info.plist"; path = "HelloWorld/HelloWorld-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
-		8E100231009048C0919FC38E /* SocketIO.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = SocketIO.framework; path = "HelloWorld/Plugins/resulticks-cordova-plugin-inh/SocketIO.framework"; sourceTree = "<group>"; };
-		91DAEF157B3149A4845E1383 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "HelloWorld/Plugins/resulticks-cordova-plugin-inh/Alamofire.framework"; sourceTree = "<group>"; };
-		96C66AFC9A6F43B3BF813625 /* ReCordovaPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = ReCordovaPlugin.m; path = "resulticks-cordova-plugin-inh/ReCordovaPlugin.m"; sourceTree = "<group>"; };
 		97DB149AB3C641DCBE4AC96A /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = "HelloWorld/Plugins/cordova-plugin-fcm-updated/GoogleSymbolUtilities.framework"; sourceTree = "<group>"; };
 		A4A74424DBE240449A039D75 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = "HelloWorld/Plugins/cordova-plugin-fcm-updated/GoogleInterchangeUtilities.framework"; sourceTree = "<group>"; };
 		AE803ACBDDFE4389809B95E9 /* FCMPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = FCMPlugin.m; path = "cordova-plugin-fcm-updated/FCMPlugin.m"; sourceTree = "<group>"; };
-		B36ACC928C5941B59BF91CCD /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = "HelloWorld/Plugins/resulticks-cordova-plugin-inh/CryptoSwift.framework"; sourceTree = "<group>"; };
 		CDA919E166BD40CC8E7D5731 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		CDF0CB7C71F849F49C27F9EC /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = "HelloWorld/Plugins/cordova-plugin-fcm-updated/GoogleUtilities.framework"; sourceTree = "<group>"; };
 		D089B664BB6842EEBFE65D72 /* AppDelegate+FCMPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "AppDelegate+FCMPlugin.h"; path = "cordova-plugin-fcm-updated/AppDelegate+FCMPlugin.h"; sourceTree = "<group>"; };
@@ -135,6 +121,13 @@
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = HelloWorld/config.xml; sourceTree = "<group>"; };
 		FD81419814814871A1DD210B /* FCMPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = FCMPlugin.h; path = "cordova-plugin-fcm-updated/FCMPlugin.h"; sourceTree = "<group>"; };
 		FF9E1071237191BF00F07538 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3D030DC8ED0240BDA56627D0 /* ReCordovaPlugin.m */ = {isa = PBXFileReference; name = "ReCordovaPlugin.m"; path = "resulticks-cordova-plugin/ReCordovaPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		61F2E0168B9E41D5875F70F7 /* Alamofire.framework */ = {isa = PBXFileReference; name = "Alamofire.framework"; path = "HelloWorld/Plugins/resulticks-cordova-plugin/Alamofire.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		0F7EE953F737492786523028 /* CryptoSwift.framework */ = {isa = PBXFileReference; name = "CryptoSwift.framework"; path = "HelloWorld/Plugins/resulticks-cordova-plugin/CryptoSwift.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		8D6661776B33433E8FC03965 /* IDZSwiftCommonCrypto.framework */ = {isa = PBXFileReference; name = "IDZSwiftCommonCrypto.framework"; path = "HelloWorld/Plugins/resulticks-cordova-plugin/IDZSwiftCommonCrypto.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		5F48BFFD82B842D686CA4C9D /* REIOSSDK.framework */ = {isa = PBXFileReference; name = "REIOSSDK.framework"; path = "HelloWorld/Plugins/resulticks-cordova-plugin/REIOSSDK.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		23F71BAE0CAF411FB848A7AC /* SocketIO.framework */ = {isa = PBXFileReference; name = "SocketIO.framework"; path = "HelloWorld/Plugins/resulticks-cordova-plugin/SocketIO.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		CF56EA8FE0524E91A2BBB92D /* Starscream.framework */ = {isa = PBXFileReference; name = "Starscream.framework"; path = "HelloWorld/Plugins/resulticks-cordova-plugin/Starscream.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,9 +138,6 @@
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				9277FD953E884A4D8A76DB42 /* FirebaseAnalytics.framework in Frameworks */,
 				32F914322557434EAC1B7B15 /* FirebaseCore.framework in Frameworks */,
-				FF9E106D2371915400F07538 /* CryptoSwift.framework in Frameworks */,
-				FF9E106B2371915200F07538 /* Alamofire.framework in Frameworks */,
-				FF9E10672371914B00F07538 /* SocketIO.framework in Frameworks */,
 				F0A7855297FC4A9BB7D21F07 /* FirebaseInstanceID.framework in Frameworks */,
 				E61BA999C74D4B9785F50485 /* FirebaseMessaging.framework in Frameworks */,
 				72A0133C068F4A6D986EEDC5 /* GoogleInterchangeUtilities.framework in Frameworks */,
@@ -155,13 +145,16 @@
 				61C99212A040422B865A8E72 /* GoogleSymbolUtilities.framework in Frameworks */,
 				AA4BEDD27D364111861A2396 /* GoogleUtilities.framework in Frameworks */,
 				3AFA8D9864B54F928BA75108 /* libc++.tbd in Frameworks */,
-				FF9E10642371914900F07538 /* REIOSSDK.framework in Frameworks */,
 				A7C4792182BC4519A3CDB433 /* libz.tbd in Frameworks */,
-				FF9E10692371914D00F07538 /* Starscream.framework in Frameworks */,
-				FF9E106F2371915900F07538 /* IDZSwiftCommonCrypto.framework in Frameworks */,
 				7D8F494FEA2C4C808135EEF2 /* AddressBook.framework in Frameworks */,
 				BCE2ACD715804DD4B40A334C /* libsqlite3.0.tbd in Frameworks */,
 				8ED133A84BEA42DDA0A99E5C /* Security.framework in Frameworks */,
+				B1E898D29D8346E682E1B119 /* Alamofire.framework in Frameworks */,
+				67D2D52D236D4E47BE9875C8 /* CryptoSwift.framework in Frameworks */,
+				ABD7648F8B0249DDB22CF346 /* IDZSwiftCommonCrypto.framework in Frameworks */,
+				635DEE9946C44F4E8C6DD6B6 /* REIOSSDK.framework in Frameworks */,
+				10BEA0EF74CE4A2285AB2A2B /* SocketIO.framework in Frameworks */,
+				3406137837DF446B88FA0A74 /* Starscream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,12 +239,12 @@
 				3BD3726FF57847229D6D1242 /* AddressBook.framework */,
 				CDA919E166BD40CC8E7D5731 /* libsqlite3.0.tbd */,
 				2F234A07A021425398B87C84 /* Security.framework */,
-				91DAEF157B3149A4845E1383 /* Alamofire.framework */,
-				B36ACC928C5941B59BF91CCD /* CryptoSwift.framework */,
-				7A0168859DD34778A09965D4 /* IDZSwiftCommonCrypto.framework */,
-				74AE9C2C071442C5A548ED1F /* REIOSSDK.framework */,
-				8E100231009048C0919FC38E /* SocketIO.framework */,
-				31CF17778BFB4F6BAF2D7ACC /* Starscream.framework */,
+				61F2E0168B9E41D5875F70F7 /* Alamofire.framework */,
+				0F7EE953F737492786523028 /* CryptoSwift.framework */,
+				8D6661776B33433E8FC03965 /* IDZSwiftCommonCrypto.framework */,
+				5F48BFFD82B842D686CA4C9D /* REIOSSDK.framework */,
+				23F71BAE0CAF411FB848A7AC /* SocketIO.framework */,
+				CF56EA8FE0524E91A2BBB92D /* Starscream.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -283,7 +276,7 @@
 				FD81419814814871A1DD210B /* FCMPlugin.h */,
 				D089B664BB6842EEBFE65D72 /* AppDelegate+FCMPlugin.h */,
 				D5776FA7982849228E924DF8 /* Firebase.h */,
-				96C66AFC9A6F43B3BF813625 /* ReCordovaPlugin.m */,
+				3D030DC8ED0240BDA56627D0 /* ReCordovaPlugin.m */,
 			);
 			name = Plugins;
 			path = HelloWorld/Plugins;
@@ -418,7 +411,7 @@
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				2652D1892FF84122BD69C040 /* FCMPlugin.m in Sources */,
 				B17074238FEF445B9D94F568 /* AppDelegate+FCMPlugin.m in Sources */,
-				6A0937DC3D314A7892949E00 /* ReCordovaPlugin.m in Sources */,
+				2CD63FE4963D4BDB939DB794 /* ReCordovaPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +492,78 @@
 					"HelloWorld/Plugins/resulticks-cordova-plugin-inh",
 					"HelloWorld/Plugins/resulticks-cordova-plugin-inh",
 					"$(PROJECT_DIR)/HelloWorld/Plugins/resulticks-cordova-plugin-inh",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -582,6 +647,78 @@
 					"HelloWorld/Plugins/resulticks-cordova-plugin-inh",
 					"HelloWorld/Plugins/resulticks-cordova-plugin-inh",
 					"$(PROJECT_DIR)/HelloWorld/Plugins/resulticks-cordova-plugin-inh",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
+					"\"HelloWorld/Plugins/resulticks-cordova-plugin\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloWorld/HelloWorld-Prefix.pch";

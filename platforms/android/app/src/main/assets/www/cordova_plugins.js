@@ -9,9 +9,9 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       ]
     },
     {
-      "id": "resulticks-cordova-plugin-inh.ReCordovaPlugin",
-      "file": "plugins/resulticks-cordova-plugin-inh/www/ReCordovaPlugin.js",
-      "pluginId": "resulticks-cordova-plugin-inh",
+      "id": "resulticks-cordova-plugin.ReCordovaPlugin",
+      "file": "plugins/resulticks-cordova-plugin/www/ReCordovaPlugin.js",
+      "pluginId": "resulticks-cordova-plugin",
       "clobbers": [
         "ReCordovaPlugin"
       ]
@@ -20,6 +20,6 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
   module.exports.metadata = {
     "cordova-plugin-whitelist": "1.3.4",
     "cordova-plugin-fcm-updated": "1.0.1",
-    "resulticks-cordova-plugin-inh": "0.1.4"
+    "resulticks-cordova-plugin": "1.2"
   };
 });

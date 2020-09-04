@@ -19,6 +19,7 @@ under the License.
 -->
 <html>
 <!--  -->
+
 <head>
   <!--
   Customize this policy to fit your own app's needs. For more guidance, see:
@@ -29,11 +30,11 @@ under the License.
   * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
   * Enable inline JS: add 'unsafe-inline' to default-src
 -->
-<meta name="format-detection" content="telephone=no">
-<meta name="msapplication-tap-highlight" content="no">
-<meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-<link rel="stylesheet" type="text/css" href="css/index.css">
-<title>Hello World</title>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <title>Hello World</title>
 </head>
 
 <body>
@@ -50,85 +51,88 @@ under the License.
   </div>
   <script type="text/javascript" src="cordova.js"></script>
   <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="https://sdk.resu.io/Scripts/jquery-1.7.1.min.js"></script>
   <script>
+    function goToNext() {
+      window.location.href = "secondScreen.html"
+    }
 
-  function goToNext() {
-    window.location.href="secondScreen.html"
-  }
+    function getNotification() {
 
-  function getNotification() {
+      ReCordovaPlugin.getNotification("something", function sucess(value) {
+        alert(value)
+      }, function failure(err) {
+        alert(err)
+      });
+    }
 
-    ReCordovaPlugin.getNotification("something", function sucess(value) {
-      alert(value)
-    }, function failure(err) {
-      alert(err)
-    });
-  }
+    function deleteNotification() {
 
-  function deleteNotification() {
-
-    var location = {
-      "aps" : {
-        "category" : "AlertMaybeLater",
-        "mutable-content" : "1",
-        "alert" : {
-          "title" : "Home loans from Vision Bank",
-          "body" : "Your dream home can be yours with Vision Bank’s new home loan offer. Find out how https:\/\/b.resu.io\/XX2Rjg"
+      var location = {
+        "aps": {
+          "category": "AlertMaybeLater",
+          "mutable-content": "1",
+          "alert": {
+            "title": "Home loans from Vision Bank",
+            "body": "Your dream home can be yours with Vision Bank’s new home loan offer. Find out how https:\/\/b.resu.io\/XX2Rjg"
+          },
+          "badge": 5,
+          "sound": "default"
         },
-        "badge" : 5,
-        "sound" : "default"
-      },
-      "duration" : "1 (Hour(s))",
-      "google.c.a.e" : "1",
-      "id" : "0001",
-      "attachment-url" : "https:\/\/snx.resulticks.com\/SocialMediaPostPicture\/Temp\/dd2eba83-647e-4c58-9f1b-31ab4c28ac58.png",
-      "mobileFriendlyUrl" : "http:\/\/visionarybank.resulticks.net\/creditcard.html?did:cust_0abb0f9b_42cd_4edd_9d4d_127f01cec4c2&bid:E&cid:3718b24b-964e-43fe-9641-f5cea5ff0b92&rid:FZ2K&sid:3718b24b-964e-43fe-9641-f5cea5ff0b92&chl:sm&utm_source:RE&utm_medium:comm&utm_campaign:abF",
-      "screenUrl" : "\/homeloan",
-      "gcm.message_id" : "1568041340895992"
-    }
-    ReCordovaPlugin.deleteNotification(location);
-  }
-
-  function locationUpdate() {
-    var location = {
-      latitude : 13.067439,
-      longitude: 80.237617
-    }
-
-    ReCordovaPlugin.locationUpdate(location);
-  }
-
-  function register() {
-
-    var resUser = {
-      userUniqueId: 'BZOPP0365H',
-      name: 'buvanesh',
-      age: '58',
-      email: 'buvanesh@gmail.com',
-      phone: '9786483048',
-      gender: 'male',
-      deviceToken: 'ftBTbiSgYdU:APA91bFuoBDx0o8MlD-aKfJRvmQszZ0_NLNPHplVCF91fQYRIqp2SXWqteWDg_qa5YzQAcQ71NjNj_rfqXa7Woq2decTlN81sZXopLO5nkwgsNlQVChW866DoONt27bKtA2QQGCOxNKn',
-      profileUrl: 'ytutuu'
-    }
-    ReCordovaPlugin.userRegister(resUser);
-  }
-
-  function customEvent() {
-    //alert('Hai2');
-    var resEvent1 = {
-      eventName: 'App Opened'
-    }
-
-    var resEvent2 = {
-      eventName: 'Product Purchased',
-      data: {
-        productId: 'P234234',
-        productName: 'Mobile Phone'
+        "duration": "1 (Hour(s))",
+        "google.c.a.e": "1",
+        "id": "0001",
+        "attachment-url": "https:\/\/snx.resulticks.com\/SocialMediaPostPicture\/Temp\/dd2eba83-647e-4c58-9f1b-31ab4c28ac58.png",
+        "mobileFriendlyUrl": "http:\/\/visionarybank.resulticks.net\/creditcard.html?did:cust_0abb0f9b_42cd_4edd_9d4d_127f01cec4c2&bid:E&cid:3718b24b-964e-43fe-9641-f5cea5ff0b92&rid:FZ2K&sid:3718b24b-964e-43fe-9641-f5cea5ff0b92&chl:sm&utm_source:RE&utm_medium:comm&utm_campaign:abF",
+        "screenUrl": "\/homeloan",
+        "gcm.message_id": "1568041340895992"
       }
+      ReCordovaPlugin.deleteNotification(location);
     }
-    ReCordovaPlugin.customEvent(resEvent2);
-  }
 
+    function locationUpdate() {
+      var location = {
+        latitude: 13.067439,
+        longitude: 80.237617
+      }
+
+      ReCordovaPlugin.locationUpdate(location);
+    }
+
+    function register() {
+
+      var resUser = {
+        userUniqueId: 'BZOPP0365H',
+        name: 'buvanesh',
+        age: '58',
+        email: 'buvanesh@gmail.com',
+        phone: '9786483048',
+        gender: 'male',
+        deviceToken: 'ftBTbiSgYdU:APA91bFuoBDx0o8MlD-aKfJRvmQszZ0_NLNPHplVCF91fQYRIqp2SXWqteWDg_qa5YzQAcQ71NjNj_rfqXa7Woq2decTlN81sZXopLO5nkwgsNlQVChW866DoONt27bKtA2QQGCOxNKn',
+        profileUrl: 'ytutuu'
+      }
+      ReCordovaPlugin.userRegister(resUser);
+    }
+
+    function customEvent() {
+      var resEvent1 = {
+        eventName: 'App Opened'
+      }
+
+      var resEvent2 = {
+        eventName: 'Product Purchased',
+        data: {
+          productId: 'P234234',
+          productName: 'Mobile Phone'
+        }
+      }
+      ReCordovaPlugin.customEvent(resEvent2);
+    }
+
+    function notificationReceived(data) {
+      alert(getInnercontent());
+
+    }
   </script>
 
 </body>

@@ -9,7 +9,8 @@ public class SampleApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        AppConstants.LogFlag =true;
+
         ReAndroidSDK.getInstance(this);
+        AppConstants.LogFlag =true;
     }
 }
